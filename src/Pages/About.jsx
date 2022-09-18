@@ -90,7 +90,7 @@ const Image = styled.div`
     
 `
 const Text = styled.div`
-    /* flex: 55%; */
+    flex: 55%;
     @media screen and(max-width:900px){
         flex: 1 !important;
         /* justify-content: center; */
