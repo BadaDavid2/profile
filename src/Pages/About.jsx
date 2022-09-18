@@ -43,7 +43,9 @@ const Container = styled.div`
     height: 100vh;
 `
 const Wrapper = styled.div`
-    padding: 0px 100px;
+    width: 87% ;
+    margin: auto;
+    
     h2{
         width: 50px;
         position: relative;
@@ -88,13 +90,18 @@ const Image = styled.div`
     
 `
 const Text = styled.div`
-    flex: 55%;
-
+    /* flex: 55%; */
+    @media screen and(max-width:900px){
+        flex: 1 !important;
+        /* justify-content: center; */
+        /* display: flex;
+        flex-direction: column; */
+    }
     div{
         display:flex;
         width: 600px;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         @media screen and(max-width:900px){
             width:100%;
         }

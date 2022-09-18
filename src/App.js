@@ -18,9 +18,9 @@ function App() {
       </Routes> */}
       <Home />
       <About/>
-      <Projects/>
+      {/* <Projects/>
       <Blog/>
-      <Contact/>
+      <Contact/> */}
     </Router>
   );
 }

@@ -53,10 +53,10 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 `
 const Text = styled.div`
-    flex: 1;
+    width:70%;
     font-size: 60px;
     line-height: 50px;
     font-family: 'Times New Roman', Times, serif;
@@ -65,12 +65,17 @@ const Text = styled.div`
     }
 `
 const Image = styled.div`
-    width: 50%;
+    width: 30%;
     img{
-        width:40%;
-        margin: auto;
+        width:25rem;
+        height: 40rem;
+        /* margin: auto; */
         border-radius: 46%;
         opacity: 0.854;
+        @media screen and (max-width:1200px){
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 const Btn = styled.div`

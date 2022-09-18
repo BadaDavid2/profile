@@ -12,10 +12,12 @@ const BottomH = () => {
             <span>
             Trusted by high grwoth startups and investors
             </span>
+            <dir>
             <div className='red'><AiFillHtml5/> HTML</div>
             <div className='green'><ImCss3/>CSS</div>
             <div ><FaReact/>ReactJs</div>
             <div className='yellow'><SiJavascript/>JavaScript</div>
+            </dir>
         </Wrapper>
       </Conatiner>
     </>
@@ -43,6 +45,9 @@ const Wrapper = styled.div`
         margin-right: 100px;
         text-transform: uppercase;
         font-size: 14px;
+        @media screen and (max-width:900px){
+         flex:1;
+        }
     }
     div{
         flex: 1;
@@ -54,6 +59,15 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         font-weight: 300;
+        @media screen and (max-width:900px){
+          font-size: 20px;
+        }
+    }
+    dir{
+      display: flex;
+      flex: 3;
+      justify-content: space-between;
+      /* width: 100%; */
     }
 `
 
